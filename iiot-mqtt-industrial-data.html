@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Industrial IoT &amp; MQTT Data Integration | Machcraft Automation</title>
+<meta name="description" content="Industrial IoT and MQTT overview for securely sharing machine and process data, including brokers, topics, payload design, edge gateways, network security and operational monitoring.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#050a0f">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Industrial IoT &amp; MQTT Data Integration | Machcraft Automation">
+<meta property="og:description" content="Industrial IoT and MQTT overview for securely sharing machine and process data, including brokers, topics, payload design, edge gateways, network security and operational monitoring.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Industrial IoT &amp; MQTT Data Integration | Machcraft Automation">
+<meta name="twitter:description" content="Industrial IoT and MQTT overview for securely sharing machine and process data, including brokers, topics, payload design, edge gateways, network security and operational monitoring.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Industrial IoT & MQTT Data Integration","description":"Industrial IoT and MQTT overview for securely sharing machine and process data, including brokers, topics, payload design, edge gateways, network security and operational monitoring.","author":{"@type":"Organization","name":"Machcraft Automation"},"publisher":{"@type":"Organization","name":"Machcraft Automation"},"about":"IIoT/MQTT"}</script>
+<style>:root{color-scheme:dark;--bg:#050a0f;--panel:#0a1520;--line:#1a3550;--text:#e8edf2;--muted:#a6bbce;--blue:#2288ff;--cyan:#00c8e8}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:17px/1.75 system-ui,-apple-system,Segoe UI,sans-serif}a{color:#75b7ff}a:hover{color:var(--cyan)}.wrap{width:min(980px,calc(100% - 36px));margin:auto}header{border-bottom:1px solid var(--line);background:#07111b}header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 0}header a{text-decoration:none;font-weight:650}.brand{color:#fff;letter-spacing:1.5px}nav{display:flex;gap:18px;flex-wrap:wrap;font-size:14px}main{padding:54px 0 72px}nav.crumb{font-size:13px;color:var(--muted);margin-bottom:24px}h1{font-size:clamp(34px,6vw,54px);line-height:1.12;letter-spacing:-1px;margin:0 0 20px}h2{font-size:25px;line-height:1.25;margin:38px 0 12px}h3{font-size:18px;margin:22px 0 5px}p{margin:0 0 16px;color:var(--muted)}.lead{font-size:19px;color:#d5e2ee;max-width:800px}.eyebrow{font:12px/1.4 ui-monospace,monospace;color:var(--cyan);text-transform:uppercase;letter-spacing:2px;margin-bottom:12px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;margin:24px 0}.cta{display:inline-block;background:var(--blue);color:#fff;padding:12px 18px;border-radius:6px;text-decoration:none;font-weight:700;margin:6px 8px 6px 0}.cta.secondary{background:transparent;border:1px solid var(--line)}ul{color:var(--muted);padding-left:22px}li{margin:7px 0}footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}footer .links{display:flex;gap:18px;flex-wrap:wrap;margin:12px 0}@media(max-width:600px){header .wrap{align-items:flex-start;flex-direction:column}nav{gap:12px}main{padding-top:36px}}</style>
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="index.html">MACHCRAFT AUTOMATION</a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="plc-programming-nashik.html">PLC Programming</a><a href="hmi-development-india.html">HMI Development</a><a href="scada-integration-india.html">SCADA Integration</a></nav></div></header>
+<main class="wrap">
+<nav class="crumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / IIoT/MQTT</nav>
+<div class="eyebrow">Technology guide · Machcraft Automation · Nashik, Maharashtra, India</div>
+<h1>Industrial IoT &amp; MQTT Data Integration</h1>
+<p class="lead">Industrial Internet of Things (IIoT) projects connect operational equipment and data systems to support monitoring, analysis and reporting. MQTT is a lightweight publish/subscribe messaging protocol often used to move data between gateways, brokers and applications.</p>
+<div class="panel"><strong>Discuss a IIoT/MQTT automation requirement</strong><p>Share the device or software model, version, machine type, project location and a short description of the requirement. Compatibility and scope can then be reviewed.</p><a class="cta" href="https://wa.me/919309755188?text=Hello%20Machcraft!%20I%20would%20like%20to%20discuss%20IIoT%2FMQTT%20automation%20support.">Discuss your project</a><a class="cta secondary" href="tel:+919309755188">Call +91 9309755188</a></div>
+<section><h2>Define the use case first</h2><p>Start with the operational question: energy monitoring, production counts, downtime visibility, condition monitoring or reporting. Define data ownership, sampling frequency, retention and the users who need the information.</p></section>
+<section><h2>MQTT architecture</h2><p>A typical arrangement has edge devices or gateways publish messages to an MQTT broker, while authorized subscribers consume selected topics. Plan topic names, payload schemas, timestamps, quality indicators and message delivery behavior.</p></section>
+<section><h2>OT/IT security boundaries</h2><p>Do not expose PLCs or control networks directly to the public internet. Use a reviewed network architecture, authenticated clients, encrypted transport where supported, least-privilege topic permissions, credential rotation and controlled outbound paths.</p></section>
+<section><h2>Reliability and data quality</h2><p>Define behavior for broker outages, buffering, reconnects, duplicate messages and stale values. Include source timestamps and quality flags so dashboards do not present old data as live process state.</p></section>
+<section><h2>Frequently asked questions</h2><h3>Does MQTT replace PLC control?</h3><p>No. MQTT is generally used for data exchange and supervisory integration; deterministic machine control and safety functions should remain in appropriately designed control systems.</p>
+<h3>What is an MQTT broker?</h3><p>A broker receives published messages and routes them to subscribers according to topic subscriptions and access rules.</p>
+<h3>Can legacy equipment be connected to IIoT?</h3><p>Sometimes, through a suitable gateway or data interface. Feasibility depends on available protocols, network access, data rights and cybersecurity review.</p></section>
+<section><h2>Related automation services</h2><p><a href="plc-programming-nashik.html">PLC programming</a> · <a href="hmi-development-india.html">HMI development</a> · <a href="scada-integration-india.html">SCADA integration</a></p></section>
+</main>
+<footer><div class="wrap"><strong>Machcraft Automation</strong><div>Nashik, Maharashtra, India · <a href="tel:+919309755188">+91 9309755188</a> · <a href="mailto:info@machcraft.in">info@machcraft.in</a></div><div class="links"><a href="index.html">Home</a><a href="plc-programming-nashik.html">PLC Programming Nashik</a><a href="hmi-development-india.html">HMI Development India</a><a href="scada-integration-india.html">SCADA Integration India</a></div></div></footer>
+</body>
+</html>
