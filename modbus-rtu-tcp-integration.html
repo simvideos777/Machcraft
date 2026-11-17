@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modbus RTU &amp; Modbus TCP Industrial Communication | Machcraft Automation</title>
+<meta name="description" content="Modbus RTU and Modbus TCP integration guide covering serial and Ethernet networks, register maps, addressing, data types, diagnostics and PLC, HMI and SCADA connectivity.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#050a0f">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Modbus RTU &amp; Modbus TCP Industrial Communication | Machcraft Automation">
+<meta property="og:description" content="Modbus RTU and Modbus TCP integration guide covering serial and Ethernet networks, register maps, addressing, data types, diagnostics and PLC, HMI and SCADA connectivity.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Modbus RTU &amp; Modbus TCP Industrial Communication | Machcraft Automation">
+<meta name="twitter:description" content="Modbus RTU and Modbus TCP integration guide covering serial and Ethernet networks, register maps, addressing, data types, diagnostics and PLC, HMI and SCADA connectivity.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Modbus RTU & Modbus TCP Industrial Communication","description":"Modbus RTU and Modbus TCP integration guide covering serial and Ethernet networks, register maps, addressing, data types, diagnostics and PLC, HMI and SCADA connectivity.","author":{"@type":"Organization","name":"Machcraft Automation"},"publisher":{"@type":"Organization","name":"Machcraft Automation"},"about":"Modbus RTU/TCP"}</script>
+<style>:root{color-scheme:dark;--bg:#050a0f;--panel:#0a1520;--line:#1a3550;--text:#e8edf2;--muted:#a6bbce;--blue:#2288ff;--cyan:#00c8e8}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:17px/1.75 system-ui,-apple-system,Segoe UI,sans-serif}a{color:#75b7ff}a:hover{color:var(--cyan)}.wrap{width:min(980px,calc(100% - 36px));margin:auto}header{border-bottom:1px solid var(--line);background:#07111b}header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 0}header a{text-decoration:none;font-weight:650}.brand{color:#fff;letter-spacing:1.5px}nav{display:flex;gap:18px;flex-wrap:wrap;font-size:14px}main{padding:54px 0 72px}nav.crumb{font-size:13px;color:var(--muted);margin-bottom:24px}h1{font-size:clamp(34px,6vw,54px);line-height:1.12;letter-spacing:-1px;margin:0 0 20px}h2{font-size:25px;line-height:1.25;margin:38px 0 12px}h3{font-size:18px;margin:22px 0 5px}p{margin:0 0 16px;color:var(--muted)}.lead{font-size:19px;color:#d5e2ee;max-width:800px}.eyebrow{font:12px/1.4 ui-monospace,monospace;color:var(--cyan);text-transform:uppercase;letter-spacing:2px;margin-bottom:12px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;margin:24px 0}.cta{display:inline-block;background:var(--blue);color:#fff;padding:12px 18px;border-radius:6px;text-decoration:none;font-weight:700;margin:6px 8px 6px 0}.cta.secondary{background:transparent;border:1px solid var(--line)}ul{color:var(--muted);padding-left:22px}li{margin:7px 0}footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}footer .links{display:flex;gap:18px;flex-wrap:wrap;margin:12px 0}@media(max-width:600px){header .wrap{align-items:flex-start;flex-direction:column}nav{gap:12px}main{padding-top:36px}}</style>
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="index.html">MACHCRAFT AUTOMATION</a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="plc-programming-nashik.html">PLC Programming</a><a href="hmi-development-india.html">HMI Development</a><a href="scada-integration-india.html">SCADA Integration</a></nav></div></header>
+<main class="wrap">
+<nav class="crumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / Modbus RTU/TCP</nav>
+<div class="eyebrow">Technology guide · Machcraft Automation · Nashik, Maharashtra, India</div>
+<h1>Modbus RTU &amp; Modbus TCP Industrial Communication</h1>
+<p class="lead">Modbus is a widely used industrial communication protocol. Modbus RTU typically operates over serial links such as RS-485, while Modbus TCP carries Modbus messages over TCP/IP Ethernet. Reliable integration depends on precise register mapping and communication settings.</p>
+<div class="panel"><strong>Discuss a Modbus RTU/TCP automation requirement</strong><p>Share the device or software model, version, machine type, project location and a short description of the requirement. Compatibility and scope can then be reviewed.</p><a class="cta" href="https://wa.me/919309755188?text=Hello%20Machcraft!%20I%20would%20like%20to%20discuss%20Modbus%20RTU%2FTCP%20automation%20support.">Discuss your project</a><a class="cta secondary" href="tel:+919309755188">Call +91 9309755188</a></div>
+<section><h2>RTU and TCP differences</h2><p>For RTU, document the physical layer, baud rate, parity, stop bits, slave address and bus termination. For TCP, document IP addresses, subnet, port, device roles and network routing. Do not assume the two transports use identical setup.</p></section>
+<section><h2>Register maps and data types</h2><p>Confirm whether each value uses coils, discrete inputs, input registers or holding registers. Check register numbering conventions, zero- versus one-based offsets, signedness, scaling, word order and multi-register values with the device manual.</p></section>
+<section><h2>Polling and network performance</h2><p>Set polling rates appropriate to process needs and device capacity. Avoid excessive requests, duplicate polling and unnecessary writes. Consider timeout, retry and stale-data behavior so operators can distinguish a real zero from missing communication.</p></section>
+<section><h2>Commissioning and diagnostics</h2><p>Test one device at a time, verify known values, record the exact address map and inspect serial wiring or Ethernet connectivity. Capture exception responses and communication counters during fault diagnosis.</p></section>
+<section><h2>Frequently asked questions</h2><h3>Does Modbus RTU use Ethernet?</h3><p>No. Modbus RTU is commonly carried over serial physical links such as RS-485; Modbus TCP uses TCP/IP over Ethernet.</p>
+<h3>Why is a Modbus value incorrect?</h3><p>Common causes include register offset mismatch, wrong function code, data type, byte/word order, scaling or signedness.</p>
+<h3>Can Modbus connect PLC, HMI and SCADA devices?</h3><p>Yes, where each device supports a compatible Modbus role and transport. Confirm client/server or master/slave behavior and the device register map.</p></section>
+<section><h2>Related automation services</h2><p><a href="plc-programming-nashik.html">PLC programming</a> · <a href="hmi-development-india.html">HMI development</a> · <a href="scada-integration-india.html">SCADA integration</a></p></section>
+</main>
+<footer><div class="wrap"><strong>Machcraft Automation</strong><div>Nashik, Maharashtra, India · <a href="tel:+919309755188">+91 9309755188</a> · <a href="mailto:info@machcraft.in">info@machcraft.in</a></div><div class="links"><a href="index.html">Home</a><a href="plc-programming-nashik.html">PLC Programming Nashik</a><a href="hmi-development-india.html">HMI Development India</a><a href="scada-integration-india.html">SCADA Integration India</a></div></div></footer>
+</body>
+</html>
